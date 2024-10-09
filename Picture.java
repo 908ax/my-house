@@ -100,4 +100,15 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+    /**
+     * Moon desaparece sun sale
+     */
+    public void amanecer()
+    {
+        if (wall != null)
+        {
+            moon.makeInvisible();
+            sun.slowMoveVertical(-250);
+        }
+    }
 }
